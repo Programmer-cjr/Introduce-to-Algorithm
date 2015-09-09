@@ -7,14 +7,14 @@
 public class InsertSort{
 	public static void main(String[] args){
 		int[] num = {3,1,34,67,89,43,23,124};
-		InsertSort insertSort = new InsertSort();
-		insertSort.insertSort(num);
+		
+		insertSort(num);
 		for(int i = 0; i < num.length; i++)
 			System.out.println(num[i]);
 
 	}
 
-	public int insertSort(int[] num){
+	public static void insertSort(int[] num){
 		int i,j,temp;
 		for(i = 1; i <  num.length; i++){
 			temp = num[i];
@@ -25,6 +25,5 @@ public class InsertSort{
 			}
             num[j+1] = temp;
 		}
-		return 0;
 	}
 }
